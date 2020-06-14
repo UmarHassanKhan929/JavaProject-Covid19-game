@@ -313,11 +313,11 @@ public class Level1State extends GameState{
 			MusicPlayer.play("yeet");
 		}
 		
-		//if((player.getx()>2660)&&(player.getx()<2690)) {
+		if((player.getx()>2660)&&(player.getx()<2690)) {
 			if(InputKeys.isPressed(InputKeys.CONFIRM)) {
 				gsm.setState(GameStateManager.LEVELGAME2STATE);
 			}
-		//}
+		}
 			
 	}
 	

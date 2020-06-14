@@ -27,7 +27,7 @@ public class InputKeys {
 	public static int RIGHT = 3;
 	public static int JUMPBUTTON = 4;
 	public static int RUNBUTTON = 5;
-	public static int SCRATCHBUTTON = 6;
+	public static int PICKBUTTON = 6;
 	public static int SPRAYBUTTON = 7;
 	public static int ENTER = 8;
 	public static int ESCAPE = 9;
@@ -62,7 +62,7 @@ public class InputKeys {
 		}
 		
 		else if(i == KeyEvent.VK_A) {
-			currentKeyState[SCRATCHBUTTON] = b;
+			currentKeyState[PICKBUTTON] = b;
 		}
 		else if(i == KeyEvent.VK_D) {
 			currentKeyState[SPRAYBUTTON] = b;

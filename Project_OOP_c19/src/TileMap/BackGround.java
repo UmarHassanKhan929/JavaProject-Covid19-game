@@ -15,9 +15,11 @@ public class BackGround {
 	//background image variable
 	private BufferedImage image;
 	
-	//movement of background
+	//x,y coordinate
 	private double x;
 	private double y;
+	
+	//movement of background
 	private double dx;
 	private double dy;
 	
@@ -69,7 +71,7 @@ public class BackGround {
 		this.yscale = yscale;
 	}
 	
-	//setting dimension sof background
+	//setting dimension of background
 	public void setDimensions(int w, int h) {
 		width = w;
 		height = h;

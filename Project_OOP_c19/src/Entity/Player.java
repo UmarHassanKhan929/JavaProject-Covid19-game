@@ -21,9 +21,12 @@ public class Player extends MapObject {
 	// player stuff
 	private int health;
 	private int maxHealth;
+	
 	private int fire;
 	private int maxFire;
+	
 	private boolean dead;
+	
 	private boolean flinching;
 	private long flinchTimer;
 	
@@ -71,14 +74,18 @@ public class Player extends MapObject {
 		
 		width = 40;
 		height = 40;
+		
 		cwidth = 30;
 		cheight = 38;
 		
 		moveSpeed = 0.3;
 		maxSpeed = 2.2;
+		
 		stopSpeed = 0.4;
+		
 		fallSpeed = 0.15;
 		maxFallSpeed = 4.0;
+		
 		jumpStart = -5.0;
 		stopJumpSpeed = 0.3;
 		
@@ -179,14 +186,14 @@ public class Player extends MapObject {
 		else
 			firing = true;
 	}
-	public void setScratching() {
+	public void setPicking() {
 		if(knockdown)  
 			return;
 		else
-			scratching = true;
+			picking = true;
 	}
-	public boolean getScratching() {
-		return scratching;
+	public boolean getPicking() {
+		return picking;
 	}
 
 	
@@ -272,7 +279,7 @@ public class Player extends MapObject {
 	//stops everything by assigning all variables false
 	public void stop() {
 		
-		left = right = up = down = flinching  = jumping = scratching = firing = false;
+		left = right = up = down = flinching  = jumping = picking = firing = false;
 	}
 	
 	
@@ -358,7 +365,7 @@ public class Player extends MapObject {
 		// check attack has stopped
 		if(currentAction == PICKING) {
 			if(animation.hasPlayedOnce()) 
-				scratching = false;
+				picking = false;
 		}
 		
 		
@@ -401,7 +408,7 @@ public class Player extends MapObject {
 		}
 		
 		// set animation
-		if(scratching) {
+		if(picking) {
 			if(currentAction != PICKING) {
 				MusicPlayer.stop("run");
 				currentAction = PICKING;

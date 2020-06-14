@@ -61,7 +61,7 @@ public abstract class MapObject {
 	protected boolean jumping;
 	protected boolean falling;
 	protected boolean running;
-	protected boolean scratching;
+	protected boolean picking;
 	
 	//movement attributes of all entities
 	protected double moveSpeed;

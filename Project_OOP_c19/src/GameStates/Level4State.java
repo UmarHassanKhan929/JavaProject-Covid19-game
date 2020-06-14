@@ -328,7 +328,7 @@ public class Level4State extends GameState{
 
 		
 		
-		if(((player.getx()>60&&player.getx()<90)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>60&&player.getx()<90)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -337,7 +337,7 @@ public class Level4State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>60&&player.getx()<90)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>60&&player.getx()<90)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -346,7 +346,7 @@ public class Level4State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>960&&player.getx()<990)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>960&&player.getx()<990)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -355,7 +355,7 @@ public class Level4State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>3630&&player.getx()<3720)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>3630&&player.getx()<3720)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -364,7 +364,7 @@ public class Level4State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>6810&&player.getx()<6840)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>6810&&player.getx()<6840)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -373,7 +373,7 @@ public class Level4State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>2700&&player.getx()<2800)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>2700&&player.getx()<2800)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -384,7 +384,7 @@ public class Level4State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>5190&&player.getx()<5250)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>5190&&player.getx()<5250)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -395,7 +395,7 @@ public class Level4State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>8550&&player.getx()<8599)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>8550&&player.getx()<8599)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -521,8 +521,8 @@ public class Level4State extends GameState{
 
 		}
 		
-		if(InputKeys.isPressed(InputKeys.SCRATCHBUTTON)) {
-			player.setScratching();
+		if(InputKeys.isPressed(InputKeys.PICKBUTTON)) {
+			player.setPicking();
 			
 		}
 		

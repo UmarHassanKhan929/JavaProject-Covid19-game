@@ -417,7 +417,7 @@ public class LevelMini extends GameState {
 		}
 
 		
-		if(((player.getx()>870&&player.getx()<930)&&(player.gety()>330&&player.gety()<390))&&(player.getScratching())) {
+		if(((player.getx()>870&&player.getx()<930)&&(player.gety()>330&&player.gety()<390))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -426,7 +426,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if(((player.getx()>2400&&player.getx()<2460)&&(player.gety()>330&&player.gety()<390))&&(player.getScratching())) {
+		if(((player.getx()>2400&&player.getx()<2460)&&(player.gety()>330&&player.gety()<390))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -435,7 +435,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if(((player.getx()>3600&&player.getx()<3660)&&(player.gety()>330&&player.gety()<390))&&(player.getScratching())) {
+		if(((player.getx()>3600&&player.getx()<3660)&&(player.gety()>330&&player.gety()<390))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -444,7 +444,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if(((player.getx()>6030&&player.getx()<6120)&&(player.gety()>290&&player.gety()<330))&&(player.getScratching())) {
+		if(((player.getx()>6030&&player.getx()<6120)&&(player.gety()>290&&player.gety()<330))&&(player.getPicking())) {
 			
 			int ammo = player.getFire();
 			player.setFire(ammo+1);
@@ -453,7 +453,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if(((player.getx()>4650&&player.getx()<4710)&&(player.gety()>340&&player.gety()<390))&&(player.getScratching())) {
+		if(((player.getx()>4650&&player.getx()<4710)&&(player.gety()>340&&player.gety()<390))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -464,7 +464,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if(((player.getx()>2010&&player.getx()<2040)&&(player.gety()>120&&player.gety()<150))&&(player.getScratching())) {
+		if(((player.getx()>2010&&player.getx()<2040)&&(player.gety()>120&&player.gety()<150))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -475,7 +475,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if(((player.getx()>3120&&player.getx()<3150)&&(player.gety()>330&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>3120&&player.getx()<3150)&&(player.gety()>330&&player.gety()<360))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -486,7 +486,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if(((player.getx()>4180&&player.getx()<4250)&&(player.gety()>320&&player.gety()<360))&&(player.getScratching())) {
+		if(((player.getx()>4180&&player.getx()<4250)&&(player.gety()>320&&player.gety()<360))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -497,7 +497,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if(((player.getx()>6700&&player.getx()<6760)&&(player.gety()>260&&player.gety()<310))&&(player.getScratching())) {
+		if(((player.getx()>6700&&player.getx()<6760)&&(player.gety()>260&&player.gety()<310))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -508,7 +508,7 @@ public class LevelMini extends GameState {
 			}
 		}
 		
-		if((player.getx()>8310&&player.getx()<8370)&&(player.getScratching())) {
+		if((player.getx()>8310&&player.getx()<8370)&&(player.getPicking())) {
 			MusicPlayer.play("moral");
 			eventDead();
 			
@@ -588,8 +588,8 @@ public class LevelMini extends GameState {
 			MusicPlayer.play("yeet");
 		}
 	
-		if(InputKeys.isPressed(InputKeys.SCRATCHBUTTON)) 
-			player.setScratching();
+		if(InputKeys.isPressed(InputKeys.PICKBUTTON)) 
+			player.setPicking();
 		
 		if(InputKeys.isPressed(InputKeys.SPRAYBUTTON)) {
 			player.setFiring();

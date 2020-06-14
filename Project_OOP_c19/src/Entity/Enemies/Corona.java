@@ -53,6 +53,7 @@ public class Corona extends Enemy {
 		animation.setDelay(20);
 		
 		left = true;
+		
 		facingRight = false;
 		
 	}

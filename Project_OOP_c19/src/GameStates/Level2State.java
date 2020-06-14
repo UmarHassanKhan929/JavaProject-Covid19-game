@@ -502,13 +502,13 @@ public class Level2State extends GameState {
 			MusicPlayer.play("yeet");
 		}
 		//cheat code to skip levels
-		//if(player.getx()>6990 && player.getx()<7050) {
+		if(player.getx()>6990 && player.getx()<7050) {
 			if(InputKeys.isPressed(InputKeys.CONFIRM)) {
 				
 				MusicPlayer.stop("level2");
 				gsm.setState(GameStateManager.LEVELGAME3STATE);
 			}
-		//}
+		}
 		
 	}
 	

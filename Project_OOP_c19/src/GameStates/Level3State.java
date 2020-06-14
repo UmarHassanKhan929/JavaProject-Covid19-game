@@ -313,7 +313,7 @@ public class Level3State extends GameState{
 		
 		//mask.update();
 		
-		if(((player.getx()>30&&player.getx()<90)&&(player.gety()>260&&player.gety()<300))&&(player.getScratching())) {
+		if(((player.getx()>30&&player.getx()<90)&&(player.gety()>260&&player.gety()<300))&&(player.getPicking())) {
 			int ammo = player.getFire();
 			
 			player.setFire(ammo+1);
@@ -322,7 +322,7 @@ public class Level3State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>810&&player.getx()<870)&&(player.gety()>1110&&player.gety()<1140))&&(player.getScratching())) {
+		if(((player.getx()>810&&player.getx()<870)&&(player.gety()>1110&&player.gety()<1140))&&(player.getPicking())) {
 			int ammo = player.getFire();
 			
 			player.setFire(ammo+1);
@@ -331,7 +331,7 @@ public class Level3State extends GameState{
 			}
 		}
 		
-		if(((player.getx()>1440&&player.getx()<1500)&&(player.gety()>630&&player.gety()<660))&&(player.getScratching())) {
+		if(((player.getx()>1440&&player.getx()<1500)&&(player.gety()>630&&player.gety()<660))&&(player.getPicking())) {
 			
 			int health = player.getHealth();
 			
@@ -523,8 +523,8 @@ public class Level3State extends GameState{
 			MusicPlayer.play("yeet");
 		}
 		
-		if(InputKeys.isPressed(InputKeys.SCRATCHBUTTON)) {
-			player.setScratching();
+		if(InputKeys.isPressed(InputKeys.PICKBUTTON)) {
+			player.setPicking();
 			
 		}
 		
@@ -534,12 +534,12 @@ public class Level3State extends GameState{
 				
 		}
 		
-		//if(player.getx()>2700 && player.getx()<2760) {
+		if(player.getx()>2700 && player.getx()<2760) {
 			if(InputKeys.isPressed(InputKeys.CONFIRM)) {
 				MusicPlayer.stop("level3");
 				gsm.setState(GameStateManager.LEVEL4PROLOGUESTATE);
 			}
-		//}
+		}
 		
 		
 	}
