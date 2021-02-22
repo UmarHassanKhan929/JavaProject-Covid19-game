@@ -6,4 +6,6 @@ To run the project, load the whole project folder in an IDE, open the GameLaunch
 
 Also, you can run the project by the provided .jar file
 
-Original source code for the base of this project https://github.com/foreignguymike/legacyYTtutorials/tree/master/dragontale
+Acknowledgment:
+Original source code for the base of this project is taken from https://github.com/foreignguymike,
+https://github.com/foreignguymike/legacyYTtutorials/tree/master/dragontale
